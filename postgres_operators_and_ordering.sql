@@ -52,3 +52,21 @@ where name like '%a';		-- pattern: name = ****a
 
 select * from students
 where name like '%r%';	-- pattern: name = **r**
+
+-- select distinct.
+select distinct grade from students;
+
+-- order by clause.
+select gpa from students
+order by gpa asc;
+
+select gpa from students 
+order by gpa desc;
+
+-- limit clause.
+select * from students
+limit 9;
+
+-- '_' character represents a character.
+select * from students
+where name like 'Le_n_';
